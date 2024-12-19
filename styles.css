@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'monaco';
+    src: url('fonts/monaco.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -33,9 +40,12 @@ body {
 
 .header-content a {
     color: white;
+    font-family: monaco;
+    font-size: 30px;
 }
 
 .header-content a span {
+    font-family: monaco;
     color: #ff0000;
 }
 
@@ -210,18 +220,52 @@ body {
 }
 
 .nav_skills p {
-    width: 600px;
+    width: 500px;
     color: white;
     margin-top: 20px;
     font-size: 1.05rem;
     line-height: 1.5;
 }
 
-
-.nav_skills-01 {
+#skills ol {
     color: white;
+    font-size: 18px;
 }
 
 .skills-num span{
     color: #ff0000;
+}
+
+.nav_skills-left {
+    margin-left: 200px;
+    margin-right: 40px;
+}
+
+/* PROJECTS */
+
+#projects {
+    background-color: #303030;
+    width: 100%;
+    height: calc(80vh - 300px);
+    padding: 20px;
+    padding-top: 76px;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.nav_projects {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.nav_projects h3 {
+    color: #ff0606;
+    font-size: 2rem;
 }
