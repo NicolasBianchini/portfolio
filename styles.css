@@ -246,9 +246,7 @@ body {
 #projects {
     background-color: #303030;
     width: 100%;
-    height: calc(80vh - 300px);
     padding: 20px;
-    padding-top: 76px;
 
     margin: 0;
 
@@ -261,11 +259,152 @@ body {
 
 .nav_projects {
     text-align: center;
-    max-width: 800px;
-    margin-bottom: 50px;
+    max-width: 1920px;
 }
 
 .nav_projects h3 {
-    color: #ff0606;
+    color: #fff;
     font-size: 2rem;
+
+    margin-top: 50px;
+}
+
+/* CARDS PROJECT */
+
+.cards {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_projects-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #575757d7;
+
+    border-radius: 20px;
+    margin: 65px 10px 20px 0;
+
+    width: 350px;
+    height: 350px;
+    transition: transform 0.4s ease;
+}
+
+.nav_projects-card:hover {
+    transform: translateY(-5px);
+}
+
+.nav_projects-card img {
+    margin-top: 23px;
+    border-radius: 20px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.nav_projects-card p {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_projects-card .nav_description {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.767);
+    color: #fff;
+    
+    text-align: center;
+    font-size: 14.3px;
+    line-height: 2;
+    border-radius: 0 0 8px 8px;
+    transition: bottom 0.4s ease;}
+
+  .nav_projects-card:hover .nav_description {
+    bottom: 0;
+  }
+
+/* CONTACT */
+
+#contact {
+    background-color: #303030;
+    width: 100%;
+    padding: 20px;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+#contact-me {
+    margin-top: 50px;
+    max-width: 1920px;
+}
+
+.nav_contact-me {
+    font-size: 2rem;
+    margin-top: 25px;
+
+    color: white;
+}
+
+.nav_contact {
+    padding: 30px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav_contact input,
+.nav_contact textarea {
+    width: 75%;
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1ff5;
+    color: #ffffff;
+
+    font-size: 1em;
+}
+
+.nav_contact textarea {
+    resize: none;
+    height: 100px;
+}
+
+.nav_contact button {
+    width: 75%;
+    padding: 10px;
+
+    background-color: #505050f5;
+    color: #fff;
+    
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav_contact button:hover {
+    background-color: #494949;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
 }

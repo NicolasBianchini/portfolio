@@ -15,7 +15,7 @@
         <nav class="nav-list">
             <a href="#about-me">Sobre</a>
             <a href="#projects">Projetos</a>
-            <a href="">Contato</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
     <main>
@@ -71,9 +71,89 @@
         <section id="projects">
             <nav class="nav_projects">
                 <h3 class="content-01">Conheça Meus Projetos</h3>
+
+                <div class="cards">
+                    <nav class="nav_projects-card">
+                        <a href="https://nicolasbianchini.github.io/TrabalhoPucrs.io-main/" target="_blank">
+                            <img src="images/menteFeminina.jpg">
+                            <div class="nav_description">Site sobre ajuda para a mente das mulheres</div>
+                            <p>Mente Feminina/TrabalhoPUCRS</p>
+                        </a>
+                    </nav>
+    
+                    <nav class="nav_projects-card">
+                        <a href="https://nicolasbianchini.github.io/Pokedex/" target="_blank">
+                            <img src="images/pokedex.png" alt="" srcset="">
+                            <p>Pokedex</p>
+                            <div class="nav_description">Pokedex contendo os 151 Pokemons da Regiao de Kanto</div>
+                        </a>
+                    </nav>
+    
+                    <nav class="nav_projects-card">
+                        <a href="https://nicolasbianchini.github.io/Login-Page/" target="_blank">
+                            <img src="images/login.png" alt="" srcset="">
+                            <p>Pagina de Login</p>
+                        </a>
+                    </nav>
+
+                    <nav class="nav_projects-card">
+                        <a href="https://nicolasbianchini.github.io/Logon-Page/" target="_blank">
+                            <img src="images/login.png" alt="" srcset="">
+                            <p>Pagina de Cadastro</p>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="cards">
+                    <nav class="nav_projects-card">
+                        <a href="https://github.com/NicolasBianchini/Cadastro-De-Clientes" target="_blank">
+                            <img src="images/img-02.jpeg" alt="" srcset="">
+                            <p>Cadastro de Clientes</p>
+                            <div class="nav_description">
+                                Site para cadastro de clientes em Node.js retornando
+                                todos os clientes em uma nova pagina
+                            </div>
+                        </a>
+                    </nav>
+    
+                    <nav class="nav_projects-card">
+                        <a href="https://github.com/NicolasBianchini/Mini-Mercado" target="_blank">
+                            <img src="images/img-02.jpeg" alt="" srcset="">
+                            <p>Mini Mercado</p>
+                            <div class="nav_description">
+                                Site para cadastro de produtos em Node.js retornando em uma nova pagina onde
+                                é possivel realizar a compra dos produtos cadastrados
+                            </div>
+                        </a>
+                    </nav>
+    
+                    <nav class="nav_projects-card">
+                        <a href="https://nicolasbianchini.github.io/Projeto-Aquario/" target="_blank">
+                            <img src="images/aquarium.png" alt="" srcset="">
+                            <p>Project Aquarium</p>
+                            <div class="nav_description">Site sobre um Aquario vendendo ingressos para seu espetaculo</div>
+                        </a>
+                    </nav>
+                </div>
             </nav>
         </section>
 
+        <section id="contact">
+            <nav class="nav_contact">
+                <h3 class="nav_contact-me">Entre em Contato Comigo</h3>
+
+                <form id="contact-me">
+                    <input type="text" id="name" placeholder="Coloque seu nome" required>
+                    <input type="email" id="email" placeholder="Coloque seu email" required>
+                    <textarea id="message" placeholder="Deixe sua mensagem" required></textarea>
+                    <button type="submit">Envie sua mensagem</button>
+                    <p id="status-message" style="color: #ffffff; margin-top: 10px; display: none;"></p>
+                  </form>
+            </nav>
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
