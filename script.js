@@ -29,3 +29,44 @@ document.getElementById('contact-me').addEventListener('submit', function (e) {
       console.error('Erro:', error);
     });
 });
+
+
+// carousel
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('.cards');
+
+  carousels.forEach((carousel) => {
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    const startDrag = (e) => {
+      isDragging = true;
+      startX = e.pageX || e.touches[0].pageX;
+      scrollLeft = carousel.scrollLeft;
+      carousel.style.cursor = 'grabbing';
+    };
+
+    const drag = (e) => {
+      if (!isDragging) return;
+      const x = e.pageX || e.touches[0].pageX;
+      const walk = (x - startX) * 1.5;
+      carousel.scrollLeft = scrollLeft - walk;
+    };
+
+    const stopDrag = () => {
+      isDragging = false;
+      carousel.style.cursor = 'grab';
+    };
+
+    carousel.addEventListener('mousedown', startDrag);
+    carousel.addEventListener('mousemove', drag);
+    carousel.addEventListener('mouseup', stopDrag);
+    carousel.addEventListener('mouseleave', stopDrag);
+
+    carousel.addEventListener('touchstart', startDrag);
+    carousel.addEventListener('touchmove', drag);
+    carousel.addEventListener('touchend', stopDrag);
+  });
+});
