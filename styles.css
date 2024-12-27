@@ -142,6 +142,24 @@ body {
   transform: translateY(-0.25rem);
 }
 
+#curriculo2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: black;
+  color: #e12b2b;
+
+  margin-top: 20px;
+  height: 40px;
+  width: 125px;
+  font-size: 13px;
+
+  border-radius: 9px;
+  transition: transform 0.4s ease;
+}
+
 .icons {
   display: flex;
   gap: 10px;
@@ -624,9 +642,13 @@ textarea:focus {
 }
 
 @media (max-width: 900px) {
-  #header {
-    position: fixed;
-    margin-left: 37px;
+  .header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 0px;
   }
 
   .nav-list {
@@ -647,7 +669,7 @@ textarea:focus {
   #main {
     display: block;
 
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 
@@ -656,10 +678,7 @@ textarea:focus {
   }
 
   .initial-content {
-    text-align: center;
-    max-width: 380px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   .initial-content h3 {
@@ -682,6 +701,8 @@ textarea:focus {
   .icons img {
     width: 30px;
     height: 30px;
+
+    margin-top: 25px;
   }
 
   /* SKILLS */
@@ -729,7 +750,7 @@ textarea:focus {
   .nav_about-me {
     text-align: center;
     max-width: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .nav_about-me h3 {
@@ -761,5 +782,9 @@ textarea:focus {
 
     border-radius: 9px;
     transition: transform 0.4s ease;
+  }
+
+  #curriculo2 {
+    display: none;
   }
 }
